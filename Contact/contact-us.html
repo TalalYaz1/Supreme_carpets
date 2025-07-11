@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <!-- Hamburger Icon for mobile view -->
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="Contact/contact-us.html" class="navbar__links"
+                >Book Appointment</a
+              >
+            </li>
+            <li class="navbar__item dropdown">
+              <a href="#collection" class="navbar__links">Collection</a>
+              <ul class="dropdown__menu">
+                <li class="dropdown">
+                  <a href="#carpet" class="dropdown__link">
+                    Carpet <span class="arrow">></span>
+                  </a>
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#modern-carpet" class="dropdown__link"
+                        >Modern Carpet</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#classic-carpet" class="dropdown__link"
+                        >Classic Carpet</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#luxury-carpet" class="dropdown__link"
+                        >Luxury Carpet</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#laminate" class="dropdown__link">Laminate</a></li>
+                <li><a href="#vinyl" class="dropdown__link">Vinyl</a></li>
+                <li><a href="#lvt" class="dropdown__link">Lvt</a></li>
+                <li><a href="#wood" class="dropdown__link">Wood</a></li>
+                <li><a href="#sisal" class="dropdown__link">Sisal</a></li>
+              </ul>
+            </li>
+            <img src="../Photos/Logo.png" class="sc-logo" alt="websitelogo" />
+            <li class="navbar__item">
+              <a href="#retroV" class="navbar__links">Gallery</a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#ourFilms" class="navbar__links">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Offscreen Menu for mobile -->
+      <div class="off-screen">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="Contact/contact-us.html" class="navbar__links"
+              >Book Appointment</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#retroV" class="navbar__links">Gallery</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourGames" class="navbar__links">Collection</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourFilms" class="navbar__links">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="image-container">
+      <img src="../Photos/Mac/Carpet1-mac.png" class="img-book" />
+      <div class="overlay"></div>
+      <div class="message"><h1>Contact Us</h1></div>
+    </div>
+
+    <section class="contact-box">
+      <div class="container">
+        <span class="big-circle"></span>
+        <img src="Photos/icons/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Book a free measurement with us and guarantee a perfect fit for
+              your space. Don't have time to pop into the shop? No problem, we
+              can bring the shop to you. Just provide us details of what you'd
+              like such and we'll send one of our expert staff to display what
+              we offer.
+            </p>
+
+            <div class="info">
+              <div class="information">
+                <img src="../Photos/icons/location.png" class="icon" alt="" />
+                <p>94 Bourne Terrace, London W2 5TH</p>
+              </div>
+              <div class="information">
+                <img src="../Photos/icons/email.png" class="icon" alt="" />
+                <p>lorem@ipsum.com</p>
+              </div>
+              <div class="information">
+                <img src="../Photos/icons/phone.png" class="icon" alt="" />
+                <p>020-3490-2346</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              autocomplete="off">
+              <!-- Web3Forms Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="bac35583-2409-413f-b17b-4300a632c834" />
+
+              <!-- Form Title -->
+              <h3 class="title">Contact us</h3>
+
+              <!-- Name Input -->
+              <div class="input-container">
+                <input type="text" name="name" class="input" required />
+                <label>Name</label>
+                <span>Name</span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="input-container">
+                <input type="email" name="email" class="input" required />
+                <label>Email</label>
+                <span>Email</span>
+              </div>
+
+              <!-- Phone Input -->
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label>Phone</label>
+                <span>Phone</span>
+              </div>
+
+              <!-- Message Input -->
+              <div class="input-container textarea">
+                <textarea name="message" class="input" required></textarea>
+                <label>Message</label>
+                <span>Message</span>
+              </div>
+
+              <!-- Honeypot for Spam Protection -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none" />
+
+              <!-- Submit Button -->
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="contact.js"></script>
+</html>

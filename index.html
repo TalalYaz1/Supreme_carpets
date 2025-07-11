@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supreme Carpets</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <!-- Hamburger Icon for mobile view -->
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="Contact/contact-us.html" class="navbar__links"
+                >Book Appointment</a
+              >
+            </li>
+            <li class="navbar__item dropdown">
+              <a href="#collection" class="navbar__links">Collection</a>
+              <ul class="dropdown__menu">
+                <li class="dropdown">
+                  <a href="#carpet" class="dropdown__link">
+                    Carpet <span class="arrow">></span>
+                  </a>
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a
+                        href="Carpets/cormar/cormar.html"
+                        class="dropdown__link"
+                        >Cormar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#classic-carpet" class="dropdown__link"
+                        >Classic Carpet</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#luxury-carpet" class="dropdown__link"
+                        >Luxury Carpet</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#laminate" class="dropdown__link">Laminate</a></li>
+                <li><a href="#vinyl" class="dropdown__link">Vinyl</a></li>
+                <li><a href="#lvt" class="dropdown__link">Lvt</a></li>
+                <li><a href="#wood" class="dropdown__link">Wood</a></li>
+                <li><a href="#sisal" class="dropdown__link">Sisal</a></li>
+              </ul>
+            </li>
+            <img src="Photos/Logo.png" class="sc-logo" alt="websitelogo" />
+            <li class="navbar__item">
+              <a href="#retroV" class="navbar__links">Gallery</a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#ourFilms" class="navbar__links">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Offscreen Menu for mobile -->
+      <div class="off-screen">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="Contact/contact-us.html" class="navbar__links"
+              >Book Appointment</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#retroV" class="navbar__links">Gallery</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourGames" class="navbar__links">Collection</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourFilms" class="navbar__links">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <section class="hero">
+      <div class="slideshow">
+        <img src="Photos/Mac/Carpet1-mac.png" class="slide active" />
+        <img src="Photos/Mac/Carpet3-mac.png" class="slide" />
+        <img src="Photos/Mac/Carpet2-mac.png" class="slide" />
+      </div>
+
+      <!-- Wrap cta + reviews together -->
+      <div class="hero-content">
+        <div class="cta">
+          <div class="cta-inner">
+            <h2>Elevate your living space</h2>
+            <p>Explore our supreme Carpets</p>
+          </div>
+          <button class="catalogue">Check Out Our Selection</button>
+        </div>
+
+        <div class="reviews-container visible" id="review-box">
+          <!-- JS will inject reviews here -->
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="top-wrapper">
+        <h2>
+          Welcome to Supreme Carpets — where elegance meets craftsmanship.
+          Discover premium carpets and flooring designed to elevate your space.
+          We’re here to bring comfort, style, and quality underfoot.
+        </h2>
+        <div class="top-right-group">
+          <img src="Photos/Mac/Display-1.png" class="top-mid" />
+          <img src="Photos/Main/Top12.png" class="top-right" />
+        </div>
+      </div>
+
+      <div class="mid-wrapper">
+        <img src="Photos/Mac/Display-1.png" class="mid-left" />
+        <div class="mid-mid">
+          <h3>
+            At Supreme Carpets, our family-run team is dedicated to guiding you
+            from the first spark of inspiration all the way through to the final
+            installation. We take pride in delivering quality flooring with a
+            personal touch, making sure your space truly reflects your vision.
+          </h3>
+        </div>
+        <img src="Photos/mac/Carpet3-mac.png" class="mid-right" />
+      </div>
+      <div class="bottom-wrapper">
+        <div class="bottom-left-cell">
+          <img src="Photos/Mac/Carpet1-mac.png" class="left-cell" />
+        </div>
+        <div class="bottom-right-cell">
+          <img src="Photos/Mac/Carpet2-mac.png" class="right-cell" />
+        </div>
+      </div>
+    </section>
+    <section class="carousel-container">
+      <div class="gradient left-gradient"></div>
+      <div class="gradient right-gradient"></div>
+
+      <!-- Auto-scrolling logo carousel -->
+      <div class="carousel">
+        <div class="logos-slide">
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <!-- Duplicate as needed -->
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+        </div>
+        <!-- Duplicate the same logos-slide again to enable infinite scroll -->
+        <div class="logos-slide">
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+          <div class="logo-item">
+            <img src="Photos/Companies/Wates.png" alt="Wates" class="logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="foot">
+      <div class="times foot-column">
+        <h2 class="foot-title opening-title">Opening Times</h2>
+        <table class="opening-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Opening Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>9:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>9:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>9:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>9:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>9:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>9:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>9:00 - 17:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="contact-section foot-column">
+        <h2 class="foot-title contact-title">Contact Us</h2>
+        <div class="contact-box">
+          <h3 class="contact-company">Supreme Carpets</h3>
+          <ul class="contact-details">
+            <li><strong>Location:</strong> 94 Bourne Terrace, London W2 5TH</li>
+            <li>
+              <strong>Phone:</strong> <a href="tel:12345678901">12345678901</a>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:Info@supremecarpets.uk">Info@supremecarpets.uk</a>
+            </li>
+            <li>
+              <strong>Website:</strong>
+              <a href="https://supremecarpets.uk" target="_blank"
+                >supremecarpets.uk</a
+              >
+            </li>
+            <li>
+              <strong>Google:</strong>
+              <a
+                href="https://www.google.com/maps/place/94+Bourne+Terrace,+London+W2+5TH"
+                target="_blank"
+                >View on Maps</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="location foot-column">
+        <h2 class="foot-title location-title">Find Us</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5816286551453!2d-0.19079369999999998!3d51.5208911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760ffea1ed241f%3A0xbd6a7ef01b538bd!2sSupreme%20Carpets!5e0!3m2!1sen!2suk!4v1749741367237!5m2!1sen!2suk"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
