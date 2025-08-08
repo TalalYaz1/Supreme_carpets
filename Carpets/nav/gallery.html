@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <!-- Hamburger Icon for mobile view -->
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="Contact/contact-us.html" class="navbar__links"
+                >Book Appointment</a
+              >
+            </li>
+            <li class="navbar__item dropdown">
+              <a href="#collection" class="navbar__links">Collection</a>
+              <ul class="dropdown__menu">
+                <li class="dropdown">
+                  <a href="#carpet" class="dropdown__link">
+                    Carpet <span class="arrow">></span>
+                  </a>
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="Carpets/nav/cormar.html" class="dropdown__link"
+                        >Cormar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./Carpets/nav/sisal.html" class="dropdown__link"
+                        >Sisal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./Carpets/nav/alexandria.html"
+                        class="dropdown__link"
+                        >Alexandria</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#laminate" class="dropdown__link">Laminate</a></li>
+                <li><a href="#vinyl" class="dropdown__link">Vinyl</a></li>
+                <li><a href="#lvt" class="dropdown__link">Lvt</a></li>
+                <li>
+                  <a href="./Carpets/nav/wood.html" class="dropdown__link"
+                    >Wood</a
+                  >
+                </li>
+                <li>
+                  <a href="./Carpets/nav/sisal.html" class="dropdown__link"
+                    >Sisal</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <img
+              src="../../Photos/Logo.png"
+              class="sc-logo"
+              alt="websitelogo" />
+            <li class="navbar__item">
+              <a href="./Carpets/nav/gallery.html" class="navbar__links"
+                >Gallery</a
+              >
+            </li>
+
+            <li class="navbar__item">
+              <a href="#ourFilms" class="navbar__links">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Offscreen Menu for mobile -->
+      <div class="off-screen">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="Contact/contact-us.html" class="navbar__links"
+              >Book Appointment</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#retroV" class="navbar__links">Gallery</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourGames" class="navbar__links">Collection</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourFilms" class="navbar__links">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Showroom Gallery</h1>
+      <div class="image-container">
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+        <div class="image"><img src="../../Photos/midpic.png" alt="" /></div>
+      </div>
+      <div class="popup-image">
+        <span>&times;</span>
+        <img src="../../Photos/midpic.png" alt="" />
+      </div>
+    </div>
+    <script src="../js/gallery.js"></script>
+  </body>
+</html>

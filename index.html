@@ -34,20 +34,20 @@
                   </a>
                   <ul class="dropdown__submenu">
                     <li>
-                      <a
-                        href="Carpets/cormar/cormar.html"
-                        class="dropdown__link"
+                      <a href="Carpets/nav/cormar.html" class="dropdown__link"
                         >Cormar</a
                       >
                     </li>
                     <li>
-                      <a href="#classic-carpet" class="dropdown__link"
-                        >Classic Carpet</a
+                      <a href="./Carpets/nav/sisal.html" class="dropdown__link"
+                        >Sisal</a
                       >
                     </li>
                     <li>
-                      <a href="#luxury-carpet" class="dropdown__link"
-                        >Luxury Carpet</a
+                      <a
+                        href="./Carpets/nav/alexandria.html"
+                        class="dropdown__link"
+                        >Alexandria</a
                       >
                     </li>
                   </ul>
@@ -55,13 +55,23 @@
                 <li><a href="#laminate" class="dropdown__link">Laminate</a></li>
                 <li><a href="#vinyl" class="dropdown__link">Vinyl</a></li>
                 <li><a href="#lvt" class="dropdown__link">Lvt</a></li>
-                <li><a href="#wood" class="dropdown__link">Wood</a></li>
-                <li><a href="#sisal" class="dropdown__link">Sisal</a></li>
+                <li>
+                  <a href="./Carpets/nav/wood.html" class="dropdown__link"
+                    >Wood</a
+                  >
+                </li>
+                <li>
+                  <a href="./Carpets/nav/sisal.html" class="dropdown__link"
+                    >Sisal</a
+                  >
+                </li>
               </ul>
             </li>
             <img src="Photos/Logo.png" class="sc-logo" alt="websitelogo" />
             <li class="navbar__item">
-              <a href="#retroV" class="navbar__links">Gallery</a>
+              <a href="./Carpets/nav/gallery.html" class="navbar__links"
+                >Gallery</a
+              >
             </li>
 
             <li class="navbar__item">
@@ -115,6 +125,26 @@
       </div>
     </section>
 
+    <section class="hero-mobile">
+      <img
+        src="Photos/Mac/Carpet1-mac.png"
+        class="mobile-hero-img"
+        alt="Mobile Hero" />
+
+      <div class="hero-mobile-content">
+        <div class="cta-mobile">
+          <h2>Elevate your living space</h2>
+          <p>Explore our supreme Carpets</p>
+          <button class="catalogue">Check Out Our Selection</button>
+
+          <!-- ✅ Injected Reviews -->
+          <div class="reviews-container-mobile visible" id="review-box-mobile">
+            <!-- JS will inject reviews here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="content">
       <div class="top-wrapper">
         <h2>
@@ -123,13 +153,13 @@
           We’re here to bring comfort, style, and quality underfoot.
         </h2>
         <div class="top-right-group">
-          <img src="Photos/Mac/Display-1.png" class="top-mid" />
+          <img src="Photos/toppic.png" class="top-mid" />
           <img src="Photos/Main/Top12.png" class="top-right" />
         </div>
       </div>
 
       <div class="mid-wrapper">
-        <img src="Photos/Mac/Display-1.png" class="mid-left" />
+        <img src="Photos/midpic.png" class="mid-left" />
         <div class="mid-mid">
           <h3>
             At Supreme Carpets, our family-run team is dedicated to guiding you
@@ -138,7 +168,14 @@
             personal touch, making sure your space truly reflects your vision.
           </h3>
         </div>
-        <img src="Photos/mac/Carpet3-mac.png" class="mid-right" />
+        <video
+          class="mid-right video-hover"
+          muted
+          preload="none"
+          poster="Photos/showroom-thumbnail.png">
+          <source src="Photos/showroom1.MOV" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="bottom-wrapper">
         <div class="bottom-left-cell">
@@ -283,6 +320,62 @@
         </div>
       </div>
     </section>
+    <section class="quick-links">
+      <div class="quick-top-wrapper">
+        <img src="../Photos/Logo.png" alt="Plumbing Pro Logo" />
+        <h1>Trust Plumbing Pro 24/7 Available</h1>
+      </div>
+
+      <div class="quick-bottom-wrapper">
+        <div class="service">
+          <h2>Services</h2>
+          <hr />
+          <ul>
+            <li><a href="./Bathroom.html">Bathroom</a></li>
+            <li><a href="./Kitchen.html">Kitchen</a></li>
+            <li><a href="./Drainage.html">Drainage</a></li>
+            <li><a href="./Heating.html">Heating</a></li>
+            <li><a href="./Emergency.html">Emergency</a></li>
+            <li><a href="./Maintenance.html">Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="quick-link">
+          <h2>Quick Links</h2>
+          <hr />
+          <ul>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./About.html">About Us</a></li>
+            <li><a href="./Pricing.html">Pricing</a></li>
+            <li><a href="./Reviews.html">Reviews</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-top">
+          © 2025 Plumbers Pro Limited. All Rights Reserved.
+          <a href="/privacy-policy">Privacy Policy</a>
+        </p>
+
+        <p class="footer-info">
+          Registered Office: Suite G04, 1 Quality Court, Chancery Lane, London,
+          WC2A 1HR<br />
+          Registered in England and Wales | Company No: 15347370
+        </p>
+
+        <p class="footer-link">
+          <a
+            href="https://find-and-update.company-information.service.gov.uk/company/15347370"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on Companies House
+          </a>
+        </p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
