@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 body {
@@ -317,6 +322,7 @@ body {
 .title-desc h1 {
   font-size: 3rem;
   margin: 0;
+  font-weight: 400;
 }
 
 .title-desc hr {
@@ -330,6 +336,7 @@ body {
   max-width: 800px;
   margin: 0; /* removes auto-centering */
   line-height: 1.6;
+  font-weight: 300;
 }
 
 /* == gallery == */
@@ -349,6 +356,10 @@ body {
   transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .image-container {

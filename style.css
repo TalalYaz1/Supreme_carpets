@@ -197,18 +197,39 @@ body {
 /* Nested DropDown */
 
 /* Position the nested submenu */
+/* Base submenu */
 .dropdown__submenu {
   display: none;
   position: absolute;
-  top: 0;
-  left: 100%;
+  top: 0; /* aligns to top of parent li */
+  left: 100%; /* appears to the right of parent li */
   background-color: #2f4746;
   min-width: 150px;
-  border-bottom: 1px solid #4b6b6a;
   flex-direction: column;
-  list-style-type: none;
-
+  list-style: none;
   z-index: 1001;
+  border-bottom: 1px solid #4b6b6a;
+}
+
+/* Parent li relative positioning for submenu */
+.dropdown__submenu li.has-submenu {
+  position: relative;
+}
+
+/* Show submenu on hover */
+.dropdown__submenu li.has-submenu:hover > .dropdown__submenu {
+  display: flex;
+}
+
+/* Optional arrow styling */
+.dropdown__link .arrow {
+  float: right;
+  margin-left: 5px;
+  transition: transform 0.2s;
+}
+
+.dropdown__submenu li.has-submenu:hover > .dropdown__link .arrow {
+  transform: rotate(90deg);
 }
 
 /* Show nested submenu on hover */
@@ -1261,4 +1282,13 @@ body {
     width: 100%;
     height: auto;
   }
+}
+
+.elfsight-app-2d510061-5b92-482f-8f98-d57e9bc05f72 {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  overflow-x: hidden; /* Prevents horizontal scroll */
 }

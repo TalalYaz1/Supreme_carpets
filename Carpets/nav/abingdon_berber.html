@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="carpet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Cormar</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <!-- Hamburger Icon for mobile view -->
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="../../Contact/contact-us.html" class="navbar__links"
+                >Book Appointment</a
+              >
+            </li>
+            <li class="navbar__item dropdown">
+              <a href="#collection" class="navbar__links">Collection</a>
+              <ul class="dropdown__menu">
+                <li class="dropdown">
+                  <a href="#carpet" class="dropdown__link">
+                    Carpet <span class="arrow">></span>
+                  </a>
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="Carpets/cormar.html" class="dropdown__link"
+                        >Cormar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="sisal.html" class="dropdown__link">Sisal</a>
+                    </li>
+                    <li>
+                      <a href="#luxury-carpet" class="dropdown__link"
+                        >Luxury Carpet</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#laminate" class="dropdown__link">Laminate</a></li>
+                <li><a href="#vinyl" class="dropdown__link">Vinyl</a></li>
+                <li><a href="#lvt" class="dropdown__link">Lvt</a></li>
+                <li><a href="#wood" class="dropdown__link">Wood</a></li>
+              </ul>
+            </li>
+            <img
+              src="../../Photos/Logo.png"
+              class="sc-logo"
+              alt="websitelogo" />
+            <li class="navbar__item">
+              <a href="#retroV" class="navbar__links">Gallery</a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#ourFilms" class="navbar__links">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Offscreen Menu for mobile -->
+      <div class="off-screen">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="../../Contact/contact-us.html" class="navbar__links"
+              >Book Appointment</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#retroV" class="navbar__links">Gallery</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourGames" class="navbar__links">Collection</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#ourFilms" class="navbar__links">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="../../Photos/Abingdon/Charter-Berber-Loop-Header.png" alt="" />
+      <div class="title-desc">
+        <h1>Abingdon - Berber</h1>
+        <hr />
+        <p>
+          The Abingdon Berber collection offers hard-wearing, loop-pile carpets
+          that combine durability with a classic, timeless style. Perfect for
+          busy family homes, Berber carpets are designed to withstand everyday
+          wear while providing a comfortable feel underfoot. With a range of
+          versatile colours and textures, the Abingdon Berber line delivers
+          practical performance without compromising on style.
+        </p>
+      </div>
+    </section>
+    <section id="carpet-gallery">
+      <h2 style="text-align: center; margin: 2rem 0">Our Cormar Collection</h2>
+      <div class="grid" id="carpetGrid"></div>
+    </section>
+    <div id="pagination" class="pagination-controls">
+      <button id="prevPage" aria-label="Previous page">◀</button>
+      <span id="pageIndicator">Page 1</span>
+      <button id="nextPage" aria-label="Next page">▶</button>
+    </div>
+    <!-- Modal container (hidden by default) -->
+    <!-- Modal container (hidden by default) -->
+    <div id="carpetModal" class="modal">
+      <div class="modal-content">
+        <span id="modalClose" class="close">&times;</span>
+        <img id="modalImage" src="" alt="" />
+        <h3 id="modalName"></h3>
+        <div id="modalInfo"></div>
+      </div>
+    </div>
+
+    <!-- ⬇️ Moved OUTSIDE of the modal ⬇️ -->
+    <section class="quick-links">
+      <div class="quick-top-wrapper">
+        <img src="../../Photos/Logo.png" alt="Plumbing Pro Logo" />
+        <h1>Trust Plumbing Pro 24/7 Available</h1>
+      </div>
+
+      <div class="quick-bottom-wrapper">
+        <div class="service">
+          <h2>Services</h2>
+          <hr />
+          <ul>
+            <li><a href="./Bathroom.html">Bathroom</a></li>
+            <li><a href="./Kitchen.html">Kitchen</a></li>
+            <li><a href="./Drainage.html">Drainage</a></li>
+            <li><a href="./Heating.html">Heating</a></li>
+            <li><a href="./Emergency.html">Emergency</a></li>
+            <li><a href="./Maintenance.html">Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="quick-link">
+          <h2>Quick Links</h2>
+          <hr />
+          <ul>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./About.html">About Us</a></li>
+            <li><a href="./Pricing.html">Pricing</a></li>
+            <li><a href="./Reviews.html">Reviews</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-top">
+          © 2025 Plumbers Pro Limited. All Rights Reserved.
+          <a href="/privacy-policy">Privacy Policy</a>
+        </p>
+
+        <p class="footer-info">
+          Registered Office: Suite G04, 1 Quality Court, Chancery Lane, London,
+          WC2A 1HR<br />
+          Registered in England and Wales | Company No: 15347370
+        </p>
+
+        <p class="footer-link">
+          <a
+            href="https://find-and-update.company-information.service.gov.uk/company/15347370"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on Companies House
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/abingdon_berber.js"></script>
+</html>
