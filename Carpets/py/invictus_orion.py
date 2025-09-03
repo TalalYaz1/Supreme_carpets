@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-URL = "https://carpetsandmore.co.uk/all-flooring/carpets/man-made/associated-weavers-invictus-sirius"
+URL = "https://carpetsandmore.co.uk/all-flooring/carpets/man-made/associated-weavers-invictus-orion"
 
 response = requests.get(URL)
 soup = BeautifulSoup(response.text, "html.parser")

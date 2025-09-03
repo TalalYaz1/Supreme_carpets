@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="carpet.css" />
-    <title>Cormar</title>
+    <title>Sisal & Seagrass</title>
   </head>
   <body>
     <header>
@@ -17,95 +17,99 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-
+    
           <!-- Desktop Menu -->
           <ul class="navbar__menu">
             <li class="navbar__item">
-              <a href="../../Contact/contact-us.html" class="navbar__links"
-                >Book Appointment</a
-              >
+              <a href="Contact/contact-us.html" class="navbar__links">
+                Book Appointment
+              </a>
             </li>
             <li class="navbar__item dropdown">
-              <a href="#collection" class="navbar__links">Collection</a>
+              <a href="#" class="navbar__links">Collection</a>
               <ul class="dropdown__menu">
                 <li class="dropdown">
-                  <a href="#carpet" class="dropdown__link">
+                  <a href="#" class="dropdown__link">
                     Carpet <span class="arrow">></span>
                   </a>
                   <ul class="dropdown__submenu">
                     <li>
-                      <a href=" cormar.html" class="dropdown__link">Cormar</a>
+                      <a href="Carpets/nav/cormar.html" class="dropdown__link">Cormar</a>
                     </li>
                     <li>
-                      <a href="sisal.html" class="dropdown__link">Sisal</a>
+                      <a href="Carpets/nav/sisal.html" class="dropdown__link">Sisal</a>
                     </li>
                     <li>
-                      <a href="#luxury-carpet" class="dropdown__link"
-                        >Luxury Carpet</a
-                      >
+                      <a href="Carpets/nav/alexandria.html" class="dropdown__link">Luxury Carpet</a>
                     </li>
                   </ul>
                 </li>
-                <li><a href="#laminate" class="dropdown__link">Laminate</a></li>
-                <li><a href="#vinyl" class="dropdown__link">Vinyl</a></li>
-                <li><a href="#lvt" class="dropdown__link">Lvt</a></li>
-                <li><a href="#wood" class="dropdown__link">Wood</a></li>
+                <li>
+                  <a href="Carpets/nav/wood.html" class="dropdown__link">Laminate</a>
+                </li>
+                <li>
+                  <a href="Carpets/nav/wood.html" class="dropdown__link">Vinyl</a>
+                </li>
+                <li>
+                  <a href="Carpets/nav/wood.html" class="dropdown__link">LVT</a>
+                </li>
+                <li>
+                  <a href="Carpets/nav/wood.html" class="dropdown__link">Wood</a>
+                </li>
+                <li>
+                  <a href="Carpets/nav/sisal.html" class="dropdown__link">Sisal</a>
+                </li>
               </ul>
             </li>
             <img
-              src="../../Photos/Logo.png"
+              src="Photos/Logo.png"
               class="sc-logo"
               alt="websitelogo" />
             <li class="navbar__item">
-              <a href="gallery.html" class="navbar__links">Gallery</a>
+              <a href="Carpets/nav/gallery.html" class="navbar__links">Gallery</a>
             </li>
-
             <li class="navbar__item">
-              <a href="#ourFilms" class="navbar__links">About Us</a>
+              <a href="Carpets/nav/aboutus.html" class="navbar__links">About Us</a>
             </li>
           </ul>
         </div>
       </nav>
-
+    
       <!-- Offscreen Menu for mobile -->
       <div class="off-screen">
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="../../Contact/contact-us.html" class="navbar__links"
-              >Book Appointment</a
-            >
+            <a href="Contact/contact-us.html" class="navbar__links">
+              Book Appointment
+            </a>
           </li>
           <li class="navbar__item">
-            <a href="#retroV" class="navbar__links">Gallery</a>
+            <a href="Carpets/nav/gallery.html" class="navbar__links">Gallery</a>
           </li>
           <li class="navbar__item">
-            <a href="#ourGames" class="navbar__links">Collection</a>
+            <a href="Carpets/nav/cormar.html" class="navbar__links">Collection</a>
           </li>
           <li class="navbar__item">
-            <a href="#ourFilms" class="navbar__links">About Us</a>
+            <a href="Carpets/nav/aboutus.html" class="navbar__links">About Us</a>
           </li>
         </ul>
       </div>
     </header>
 
     <section class="hero">
-      <img src="../../Photos/Mac/Carpet2-mac.png" alt="" />
+      <img src="../../Photos/Victoria/carousel-easicare-ultirmate-impressions.png" alt="Sisal Carpets" />
       <div class="title-desc">
-        <h1>Amtico</h1>
+        <h1>Victoria - Ultimate Expressions</h1>
         <hr />
         <p>
-          Amtico is a renowned British brand specializing in premium wood-effect
-          vinyl flooring. Known for its exceptional durability, realistic
-          finishes, and innovative design, Amtico flooring offers a stylish and
-          practical solution for modern homes and commercial spaces alike. With
-          a wide range of wood textures and tones, Amtico brings the natural
-          beauty of wood with the added benefits of easy maintenance and
-          long-lasting performance.
+          The Victoria Carpets Ultimate Expressions collection is crafted to deliver bold style and superior comfort. With its rich textures, vibrant tones, and durable construction, this range offers a perfect balance of elegance and practicality, making it an ideal choice for contemporary interiors seeking both beauty and performance.
         </p>
-      </div>
     </section>
+
     <section id="carpet-gallery">
-      <h2 style="text-align: center; margin: 2rem 0">Our Wood Collection</h2>
+      <h2 style="text-align: center; margin: 2rem 0">
+        Our Alexandria Collection
+      </h2>
       <div class="grid" id="carpetGrid"></div>
     </section>
     <div id="pagination" class="pagination-controls">
@@ -114,16 +118,14 @@
       <button id="nextPage" aria-label="Next page">▶</button>
     </div>
     <!-- Modal container (hidden by default) -->
-    <!-- Modal container (hidden by default) -->
     <div id="carpetModal" class="modal">
       <div class="modal-content">
         <span id="modalClose" class="close">&times;</span>
-        <img id="modalImage" src="" alt="" />
+        <img id="modalImage" src="" alt="Carpet Preview" />
         <h3 id="modalName"></h3>
         <div id="modalInfo"></div>
       </div>
     </div>
-
     <!-- ⬇️ Moved OUTSIDE of the modal ⬇️ -->
     <section class="quick-links">
       <div class="quick-top-wrapper">
@@ -182,6 +184,6 @@
         </p>
       </div>
     </footer>
+    <script src="../js/victoria_royal.js"></script>
   </body>
-  <script src="../js/amtico.js"></script>
 </html>
