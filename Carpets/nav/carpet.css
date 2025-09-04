@@ -212,6 +212,26 @@ body {
   z-index: 1001;
 }
 
+/* Parent li relative positioning for submenu */
+.dropdown__submenu li.has-submenu {
+  position: relative;
+}
+
+/* Show submenu on hover */
+.dropdown__submenu li.has-submenu:hover > .dropdown__submenu {
+  display: flex;
+}
+
+/* Optional arrow styling */
+.dropdown__link .arrow {
+  float: right;
+  margin-left: 5px;
+  transition: transform 0.2s;
+}
+
+.dropdown__submenu li.has-submenu:hover > .dropdown__link .arrow {
+  transform: rotate(90deg);
+}
 /* Show nested submenu on hover */
 .dropdown:hover > .dropdown__submenu {
   display: flex;
