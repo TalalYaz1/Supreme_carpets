@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 :root {
-  --blue: #3498db;
-  --dark-blue: #2980b9;
+  --blue: #324847;
+  --dark-blue: #4b6b6a;
   --background: #081118;
   --grey: #333;
   --light-grey: #3b3b3b;
 }
-
 .mmenu {
   padding: 100px;
   width: 20rem;
@@ -91,12 +90,12 @@
   display: block;
   padding: 1rem;
   color: #fff;
-  background: #3498db;
+  background: #4b6b6a;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: #2980b9;
+  background: #324847;
 }
 
 .menu-item:target > .menu-item__sub,
@@ -264,7 +263,7 @@ body {
 /* Off-screen menu for small screens (hidden initially) */
 /* Dropdown menu - hidden by default */
 .off-screen {
-  position: absolute; /* changed from fixed */
+  position: fixed; /* changed from fixed */
   top: 80px; /* height of navbar */
   left: 0;
   width: 100%;

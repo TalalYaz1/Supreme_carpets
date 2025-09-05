@@ -263,7 +263,7 @@ body {
 /* Off-screen menu for small screens (hidden initially) */
 /* Dropdown menu - hidden by default */
 .off-screen {
-  position: absolute; /* changed from fixed */
+  position: fixed; /* changed from fixed */
   top: 70px; /* height of navbar */
   left: 0;
   width: 100%;
@@ -1078,6 +1078,56 @@ body {
   text-decoration: underline;
 }
 
+/* Hide on desktop, show on mobile */
+.content-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .content-mobile {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .content {
+    display: none;
+  }
+
+  .top-wrapper-mobile h2 {
+    font-size: 1rem;
+    color: #e8dfb6;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto 2rem;
+    height: 800px; /* let it adapt to content if possible */
+  }
+
+  .slide-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slide-mobile.active {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
 /* == Media Query== */
 @media screen and (max-width: 768px) {
   body {
@@ -1229,6 +1279,12 @@ body {
   padding: 1rem;
   margin-top: 1rem;
   overflow-y: auto; /* scroll if reviews exceed max height */
+}
+/* Desktop: hide hero-mobile */
+@media (min-width: 769px) {
+  .hero-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
