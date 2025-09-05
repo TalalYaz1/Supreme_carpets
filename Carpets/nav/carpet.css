@@ -466,7 +466,7 @@ body {
 }
 
 .title-desc {
-  height: 400px;
+  /* height: 400px; */
   padding: 2rem 4rem;
   box-sizing: border-box;
   background-color: #f9f9f9;
@@ -498,10 +498,33 @@ body {
   font-weight: 300;
 }
 
+.price-enquiry {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.price-enquiry h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.call-us-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4b6b6a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.call-us-btn:hover {
+  background-color: #cbbf97;
+}
 /* == gallery == */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  grid-template-columns: repeat(2, 1fr); /* exactly 3 columns */
   gap: 2rem;
   max-width: 1200px; /* controls overall width */
   margin: 2rem auto; /* centers the grid horizontally */
