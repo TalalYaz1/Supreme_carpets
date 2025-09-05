@@ -21,22 +21,23 @@ window.addEventListener("scroll", () => {
   reviews.style.transform = `translateY(${scrollY * speed - 50}%)`;
 });
 
-const toggle = document.querySelector(".navbar__toggle");
+// For hamburger toggle
+const menuToggle = document.querySelector(".navbar__toggle");
 const menu = document.querySelector(".off-screen");
 const overlay = document.querySelector(".overlay");
 
-toggle.addEventListener("click", () => {
-  toggle.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  console.log("hello");
   menu.classList.toggle("active");
   overlay.classList.toggle("active");
 });
 
 overlay.addEventListener("click", () => {
-  toggle.classList.remove("active");
+  menuToggle.classList.remove("active");
   menu.classList.remove("active");
   overlay.classList.remove("active");
 });
-
 // Reviews
 
 const reviewData = {

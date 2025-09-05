@@ -1,134 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-:root {
-  --blue: #3498db;
-  --dark-blue: #2980b9;
-  --background: #081118;
-  --grey: #333;
-  --light-grey: #3b3b3b;
-}
-
-.mmenu {
-  padding: 100px;
-  width: 20rem;
-  border-radius: 0.2rem;
-  overflow: hidden;
-}
-.mmenu a {
-  text-decoration: none;
-}
-
-.menu-item {
-  list-style: none;
-  border-top: 1px solid var(--dark-blue);
-  overflow: hidden;
-}
-
-.btn {
-  display: block;
-  padding: 1rem 1.2rem;
-  background: var(--blue);
-  color: white;
-  position: relative;
-}
-.btn::before {
-  content: "";
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  background: var(--blue);
-  left: 1.5rem;
-  bottom: -0.5rem;
-  transform: rotate(45deg);
-}
-.btn i {
-  margin-right: 1rem;
-}
-
-.menu-item__sub {
-  background: var(--grey);
-  overflow: hidden;
-  transition: max-height 0.3s;
-  max-height: 0;
-}
-.menu-item__sub a {
-  display: block;
-  padding: 1rem 1.6rem;
-  color: white;
-  font-size: 0.9rem;
-  position: relative;
-  border-bottom: 1px solid var(--light-grey);
-}
-.menu-item__sub a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0.4rem;
-  height: 100%;
-  background: var(--blue);
-  transform: translatex(-0.4rem);
-  transition: 0.3s;
-  opacity: 0;
-}
-.menu-item__sub a:hover::before {
-  opacity: 1;
-  transform: translatex(0);
-}
-
-.menu-item:target .menu-item__sub {
-  max-height: 10em;
-}
-
-.menu-item__sub {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  margin-left: 1rem; /* Indent submenus */
-}
-
-.btn {
-  display: block;
-  padding: 1rem;
-  color: #fff;
-  background: #3498db;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #2980b9;
-}
-
-.menu-item:target > .menu-item__sub,
-.menu-item__sub:target {
-  max-height: 10em;
-}
-
-.sub-btn {
-  display: block;
-  color: white;
-  padding: 1rem 1.6rem;
-  position: relative;
-}
-
-.sub-btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0.4rem;
-  height: 100%;
-  background: var(--blue);
-  transform: translateX(-0.4rem);
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.sub-btn:hover::before {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -262,41 +133,29 @@ body {
 }
 
 /* Off-screen menu for small screens (hidden initially) */
-/* Dropdown menu - hidden by default */
 .off-screen {
-  position: absolute; /* changed from fixed */
-  top: 80px; /* height of navbar */
-  left: 0;
-  width: 100%;
-  height: auto;
-  /* background: #081118; */
-  transition: max-height 0.3s ease;
-  z-index: 998; /* below navbar */
-  overflow: hidden;
-  max-height: 0; /* collapsed by default */
-  transition: max-height 0.4s ease-in-out;
-}
-.off-screen.active {
-  max-height: 100vh; /* enough to show full menu */
-}
-
-/* Optional overlay (fade background when menu is open) */
-.overlay {
+  background-color: #4b6b6a;
+  width: 50%;
+  height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 997; /* under navbar and menu */
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.5s ease-in-out;
+  z-index: 998;
+  border-right: 4px solid #e8dfb6;
+  border-image-slice: 1;
+  padding: 1rem 0;
+  overflow-y: auto;
 }
 
-.overlay.active {
-  opacity: 1;
-  pointer-events: auto;
+/* Show the off-screen menu by sliding it in */
+.off-screen.active {
+  left: 0;
+  top: -10;
 }
 
 /*  */
