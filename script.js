@@ -43,34 +43,34 @@ overlay.addEventListener("click", () => {
 const reviewData = {
   reviews: [
     {
-      author_name: "Sarah K.",
+      author_name: "Monika S.",
       rating: 5,
-      text: "Plumbers Pro installed a brand new boiler in our home, and the whole process was seamless. The team was punctual, friendly, and left everything spotless. Highly recommend for heating services!",
-      time_description: "3 months ago",
+      text: "Great service from start to finish. Rania was super professional and on top of all the requirements for our carpets, and Jamal fitted them beautifully. Very happy with the price and the quality of the job. Will definitely use this company again. Thank you!",
+      time_description: "7 months ago",
     },
     {
-      author_name: "Mark H.",
+      author_name: "Verified reviewer",
       rating: 5,
-      text: "Had a leaking pipe under the kitchen sink and they arrived within the hour. Super efficient and professional. The plumber explained everything clearly and fixed it in no time.",
-      time_description: "1 month ago",
+      text: "The team did an amazing job installing the carpet. They were punctual, professional, and efficient, leaving everything clean and perfectly finished. The results are flawless, and I couldn’t be happier. Highly recommend their services!",
+      time_description: "10 months ago",
     },
     {
-      author_name: "Lina A.",
+      author_name: "Omar Zidan",
       rating: 5,
-      text: "We used Plumbers Pro for a full bathroom renovation. From tiling to fitting the shower and toilet, everything was done to the highest standard. Can’t thank them enough!",
-      time_description: "2 months ago",
-    },
-    {
-      author_name: "David R.",
-      rating: 5,
-      text: "Excellent emergency service! Our radiator started leaking late at night and they were at our door in under 45 minutes. Really impressed with their quick response and professionalism.",
-      time_description: "5 months ago",
-    },
-    {
-      author_name: "Fatima Z.",
-      rating: 5,
-      text: "Had our entire central heating system upgraded by Plumbers Pro. The engineers were very knowledgeable and did a neat, tidy job. Great communication from start to finish.",
+      text: "Always delivering top work. Called for a flooring changes for our airbnb units, got it done with professional touch. Highly recommend!!!",
       time_description: "4 months ago",
+    },
+    {
+      author_name: "Azad Arkwazi",
+      rating: 5,
+      text: "Adel and his team did a fantastic job and came in when I needed a reliable date for the work to be completed as I’ve just purchased the house. I need the house to become a home, and they’ve done a great job and I’m truly grateful. Highly recommend!!",
+      time_description: "4 months ago",
+    },
+    {
+      author_name: "Taimoor Rahim",
+      rating: 5,
+      text: "I recently used this company to get my living room and hallway fitted with laminate and the team carried out an extraordinary job! Not only were they quick in installing the laminate but also carried out a quality job. The hallway and corridor was completed in one piece leaving a super neat finish. Also the beading was cut and nailed with precision, overall a great job! Will certainly use this company in the future",
+      time_description: "7 months ago",
     },
   ],
 };
