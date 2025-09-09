@@ -609,6 +609,33 @@
       </div>
     </footer>
   </body>
+  
   <script src="../../script.js"></script>
   <script src="../../menu.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", () => {
+    // Top-level dropdown click
+    document.querySelectorAll(".navbar__item.dropdown > a").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const menu = link.nextElementSibling;
+        if (menu) {
+          // Close other open top-level menus
+          document.querySelectorAll(".navbar__item.dropdown > .dropdown__menu").forEach(m => {
+            if (m !== menu) m.style.display = "none";
+          });
+          // Toggle this menu
+          menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+      });
+    });
+  
+    // Close menu if clicking outside
+    document.addEventListener("click", e => {
+      const isDropdown = e.target.closest(".navbar__item.dropdown");
+      if (!isDropdown) {
+        document.querySelectorAll(".navbar__item.dropdown > .dropdown__menu")
+          .forEach(menu => menu.style.display = "none");
+      }
+    });
+  });</script>
 </html>

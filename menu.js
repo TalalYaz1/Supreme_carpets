@@ -52,3 +52,33 @@ document.querySelectorAll(".toggle-btn").forEach((btn) => {
     toggle(btn);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Main dropdowns
+  const dropdownToggles = document.querySelectorAll(".dropdown > a");
+
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      const parent = toggle.parentElement;
+
+      // Close other dropdowns if you only want one open at a time
+      document.querySelectorAll(".dropdown.active").forEach((d) => {
+        if (d !== parent) d.classList.remove("active");
+      });
+
+      parent.classList.toggle("active");
+    });
+  });
+
+  // Nested submenus
+  const submenuToggles = document.querySelectorAll(".has-submenu > a");
+
+  submenuToggles.forEach((toggle) => {
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      const parent = toggle.parentElement;
+      parent.classList.toggle("active");
+    });
+  });
+});

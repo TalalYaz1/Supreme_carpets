@@ -438,4 +438,31 @@
   <script src="contact.js"></script>
   <script src="../menu.js"></script>
   <script src="../script.js"></script>
+  <script>
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // First-level dropdowns
+  document.querySelectorAll(".dropdown > a, .dropdown > .dropdown__link").forEach(link => {
+    link.addEventListener("click", e => {
+      const submenu = link.nextElementSibling;
+      if (submenu && submenu.classList.contains("dropdown__menu")) {
+        e.preventDefault(); // prevent jumping
+        submenu.classList.toggle("active");
+      }
+    });
+  });
+
+  // Nested dropdowns
+  document.querySelectorAll(".has-submenu > a").forEach(link => {
+    link.addEventListener("click", e => {
+      const submenu = link.nextElementSibling;
+      if (submenu && submenu.classList.contains("dropdown__submenu")) {
+        e.preventDefault();
+        submenu.classList.toggle("active");
+      }
+    });
+  });
+});
+  </script>
 </html>

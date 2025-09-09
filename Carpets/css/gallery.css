@@ -336,7 +336,13 @@ body {
   color: white;
 }
 
-.dropdown:hover .dropdown__menu {
+/* Top-level menu handled by JS click, so no hover */
+.dropdown > .dropdown__menu {
+  display: none; /* default hidden */
+}
+
+/* Nested submenus open on hover */
+.dropdown__submenu li.has-submenu:hover > .dropdown__submenu {
   display: flex;
 }
 /* Nested DropDown */
