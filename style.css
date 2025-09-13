@@ -1330,6 +1330,12 @@ body {
     height: auto;
     object-fit: cover;
   }
+  .mobile-hero-img2 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-top: 45px;
+  }
 
   .hero-mobile-content {
     display: flex;

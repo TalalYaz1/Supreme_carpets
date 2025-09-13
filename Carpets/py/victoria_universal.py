@@ -14,15 +14,24 @@ product_divs = soup.find_all("div", class_="product-small")
 
 for div in product_divs:
     try:
-        # Product name
-        name_tag = div.find("p", class_="name product-title")
-        name = name_tag.get_text(strip=True) if name_tag else "Unknown"
+        # Product name (inside <a> tag)
+        name_tag = div.find("a", class_="woocommerce-LoopProduct-link")
+        full_name = name_tag.get_text(strip=True) if name_tag else "Unknown"
+
+        # Extract only the part after the dash (– or -)
+        if "–" in full_name:  # en dash
+            name = full_name.split("–", 1)[1].strip()
+        elif "-" in full_name:  # normal dash fallback
+            name = full_name.split("-", 1)[1].strip()
+        else:
+            name = full_name  # no dash, keep whole name
 
         # Product image
         img_tag = div.find("img")
         img_url = img_tag["src"] if img_tag else ""
 
         products.append({
+            "full_name": full_name,
             "name": name,
             "image": img_url
         })
